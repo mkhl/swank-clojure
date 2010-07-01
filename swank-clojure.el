@@ -251,6 +251,7 @@ will be used over paths too.)"
         init-opts)
       (list "--repl")))))
 
+;;;###autoload
 (defun swank-clojure-reset-implementation ()
   "Redefines the clojure entry in `slime-lisp-implementations'."
   (aput 'slime-lisp-implementations 'clojure
