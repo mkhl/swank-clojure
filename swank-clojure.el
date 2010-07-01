@@ -69,7 +69,7 @@
 (defun swank-clojure-default-classpath ()
   (append
    (when (and (file-directory-p "~/.clojure")
-              (directory-files "~/.clojure" nil "swank-clojure.*jar$"))
+              (directory-files "~/.clojure" nil ".jar$"))
      (directory-files "~/.clojure" t ".jar$"))
    (when (file-directory-p swank-clojure-jar-home)
      (directory-files swank-clojure-jar-home t ".jar$"))))
